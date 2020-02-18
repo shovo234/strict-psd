@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+header{
+    background-color: #f9f9f9;
+}
+.strict-nav a{
+    text-transform: uppercase;
+    color: #2d3950;
+    font-weight: 700;
+    font-size: 16px;
+}
+.banner{
+    background-image: url(../images/strict-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+}
+.contant{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+   
+}
+.contant h1{
+    text-transform: uppercase;
+    font-size: 75px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.contant span{
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background: #15a4fa;
+    margin-bottom: 10px;
+}
+.contant p{
+    color: #fff;
+}
+.btn-custom{
+  margin: 20px 0;
+  background: transparent;
+  padding: 10px;
+}
+.btn-custom:hover{
+    background:  #15a4fa;
+}
+.icon{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    animation: icon-ani 1s linear infinite;
+    animation-direction: alternate;
+}
+.icon i{
+    color: #fff;
+    font-size: 20px;
+}
+@keyframes icon-ani {
+    0%{
+        transform: translate(-50%,-0%);
+    }
+    100%{
+        transform: translate(-50%,-80%);
+    }
+}
+.design{
+    background-color: #f6f9f9;
+}
+.design h1{
+    color: #2d3950;
+    font-size: 40px;
+    font-weight: 400;
+
+}
+.design p{
+    color: #999999;
+    font-size: 20px;
+    line-height: 1.em;
+}
+.feature-section{
+
+}
+.icon-box{
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    line-height: 100px;
+    font-size: 50px;
+    margin: auto;
+    border-radius: 3px;
+
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+51,7db9e8+51,7db9e8+51,7db9e8+52,7db9e8+52 */
+background: rgb(30,87,153); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 51%, rgba(125,185,232,1) 51%, rgba(125,185,232,1) 51%, rgba(125,185,232,1) 52%, rgba(125,185,232,1) 52%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 51%,rgba(125,185,232,1) 51%,rgba(125,185,232,1) 51%,rgba(125,185,232,1) 52%,rgba(125,185,232,1) 52%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 51%,rgba(125,185,232,1) 51%,rgba(125,185,232,1) 51%,rgba(125,185,232,1) 52%,rgba(125,185,232,1) 52%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+
+}
+.icon-box i{
+
+}
+.feature-contant{
+ margin: 20px 0;
+}
+.feature-contant h4{
+ color: #2d3950;
+}
+.feature-contant p{
+ color: #a9a9a9;
+ font-size: 16px;
+ line-height: 1.em;
+ margin: 0;
+}
+.showcase{
+background-color: #f6f9f9;
+}
+.showcase-contant{
+
+}
+.showcase-contant h2{
+    font-size: 41px;
+    color: #2d3950;
+}
+.showcase-contant p{
+    font-size: 15px;
+    color: #909090;
+}
+.image{
+    position: relative;
+    margin-bottom: 30px;
+}
+.image::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #48baffbf;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .4s ease;
+}
+.image:hover::before{
+   opacity: 1;
+}
+.image-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 20px;
+    opacity: 0;
+  
+}
+.image:hover .image-icon{
+    opacity: 1;
+    
+}
+
+.image-icon i{
+    border: 1px solid #fff;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+.image-icon i:hover{
+    color: #000;
+    border: 1px solid;
+}
+.contact{
+    background-image: url(../images/strict-login-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-contant{
+    color: #fff;
+    margin: 30px 0;
+    text-align: center;
+}
+.contact-contant h2{
+   font-size: 41px;
+   font-weight: 400;
+   text-transform: capitalize;
+}
+.contact-contant p{
+   font-size: 15px;
+    color: #999999;
+}
+form{
+    padding-bottom: 100px;
+}
+form input{
+    width: 100%;
+    height: 35px;
+    margin: 10px 0;
+    border-radius: 3px;
+    background: transparent;
+    border: none;
+    border: 1px solid #838390;
+    color: aliceblue;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+input::placeholder{
+    color: #fff;
+}
+form textarea{
+    width: 100%;
+    background: transparent;
+    border: none;
+    border: 1px solid #838390;
+    color: #fff;
+    
+   
+}
+input[type=checkbox]{
+    width: 15px;
+    height: 15px;
+    margin: 0;
+}
+.subscribe{
+
+}
+.subscribe ul{
+  list-style: none;
+}
+.subscribe ul li{
+ float: left;
+ color: #fff;
+ padding-left: 5px;
+}
+.btn-contact{
+ float: right;
+ color: #fff;
+ border: 1px solid  #15a4fa;
+ margin: 0;
+ padding: 5px 25px;
+}
+footer{
+    padding: 40px;
+   background-color: #f6f9f9;
+   height: 100px;
+}
+footer p a{
+	color: #999999;
+}
+footer p a:hover{
+	color:#48baff;
+}
+.social ul{
+  float: right;
+}
+.social ul li{
+    float: left;
+    margin: 3px;
+    
+}
+footer .social a{
+	height: 40px;
+	width: 40px;
+	display: inline-block;	
+	background :#15a4fa;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	border-radius: 3px;
+	padding: 5px;
+	margin: 0 2px;
+}
